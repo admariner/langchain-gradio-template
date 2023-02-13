@@ -10,8 +10,7 @@ from threading import Lock
 def load_chain():
     """Logic for loading the chain you want to use should go here."""
     llm = OpenAI(temperature=0)
-    chain = ConversationChain(llm=llm)
-    return chain
+    return ConversationChain(llm=llm)
 
 
 def set_openai_api_key(api_key: str):
